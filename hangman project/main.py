@@ -30,14 +30,14 @@ while not game_is_finished:
     print(f"{' '.join(display)}")
 
     if guess not in chosen_word:
-        print(f"You guessed {guess}, that's not in the word. You lose a life.")
+        print(f"You guessed {guess}, that's not in the word. You lost a life.")
         lives -= 1
         if lives == 0:
             game_is_finished = True
-            print("You lose.")
+            print("You lost.")
     
     if not "_" in display:
         game_is_finished = True
-        print("You win.")
+        print("You won.")
 
     print(stages[lives])
