@@ -34,4 +34,5 @@ def function(num):
         return 0
 result = function(10)
 print(result)
-    
+#Assign a different name to function and call it through the new name
+---
