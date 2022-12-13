@@ -25,10 +25,10 @@ while not should_end:
   direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
-  #TODO-2: What if the user enters a shift that is greater than the number of letters in the alphabet?
-  #Try running the program and entering a shift number of 45.
-  #Add some code so that the program continues to work even if the user enters a shift number greater than 26. 
-  #Hint: Think about how you can use the modulus (%).
+  # What if the user enters a shift that is greater than the number of letters in the alphabet?
+  #for that 
+  #Adding some code so that the program continues to work even if the user enters a shift number greater than 26. 
+  
   shift = shift % 26
 
   caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
