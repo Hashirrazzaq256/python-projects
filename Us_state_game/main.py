@@ -16,11 +16,15 @@ missed_states= []
 while len(states) < 50:
     answer_state = screen.textinput(title=f"{len(states)}/50 correct ", prompt="What is another state's name")
     answer_state = answer_state.title()
+    
+    
+    
     if answer_state == "Exit":
-        for g in all_states:
+        for g in all_states:                    
+#              missed_states = [ n for n  in states if n not in states]
             if g not in states:
                 missed_states.append(g)
-        new_data = pandas.DataFrame(missed_states)
+        new_data = pandas.DataFrame(missed_states) 
         new_data.to_csv("Missed_states.csv")
         break
 
