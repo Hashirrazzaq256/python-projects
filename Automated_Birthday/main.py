@@ -28,5 +28,4 @@ if today_date in birthday_dicts:
                             ,msg=f"Subject:Birthday Wish \n\n{content}")
 
 
-else:
-    print("no birthday")
+
