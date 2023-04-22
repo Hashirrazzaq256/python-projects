@@ -13,6 +13,10 @@ parameters= {
      "symbol":STOCK_NAME,
     "apikey": STOCK_API_KEY,
 }
+params = {
+    "q" : COMPANY_NAME,
+    "searchin": "description",
+}
 
 response = requests.get(url=STOCK_ENDPOINT,params=parameters)
 data = response.json()
@@ -42,7 +46,6 @@ print(difference)
 
 # --------Percentage difference between two stocks-----------
 diff_percent = difference/ float(yesterday_data_close)*100
-print(diff_percent)
-
-#----------- Extract the news for the particular stock---------------
-
+# if diff_percent >=5 :
+news_response = requests.get(NEWS_ENDPOINT,params=params)
+news_response.raise_for_status()
