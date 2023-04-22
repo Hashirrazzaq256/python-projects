@@ -45,3 +45,4 @@ diff_percent = difference/ float(yesterday_data_close)*100
 print(diff_percent)
 
 #----------- Extract the news for the particular stock---------------
+
