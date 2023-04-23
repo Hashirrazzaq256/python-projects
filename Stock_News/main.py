@@ -15,6 +15,7 @@ parameters= {
 }
 params = {
     "q" : COMPANY_NAME,
+    "searchin":"title",
     "searchin": "description",
 }
 
