@@ -11,6 +11,8 @@ except FileNotFoundError:
          learn_cards = original_data.to_dict(orient = "records")
 else:
     learn_cards = df.to_dict(orient="records")
+    
+    
 def next_card():
 
     global french_word, flip_timer
