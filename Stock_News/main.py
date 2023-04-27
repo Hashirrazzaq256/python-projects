@@ -1,5 +1,5 @@
 import requests
-
+impoet twilio.rest from Client
 
 STOCK_API_KEY = "O4HF1DD900H0PMJS"
 NEWS_API_KEY = "246593cc25c441aaac39afa82bb0ad20"
