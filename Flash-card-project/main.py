@@ -4,6 +4,7 @@ from  random import  choice
 BACKGROUND_COLOR = "#B1DDC6"
 french_word = {}
 learn_cards = {}
+
 try:
     df = pandas.read_csv("data/words_to_learn.csv")
 except FileNotFoundError:
