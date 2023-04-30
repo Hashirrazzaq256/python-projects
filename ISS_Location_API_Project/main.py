@@ -4,6 +4,7 @@ from astral.sun import sun
 from astral import LocationInfo
 from datetime import datetime
 import smtplib
+
 MY_LAT = 31.520370
 MY_LONG = 74.358749
 My_EMAIL = "xapastron@gmail.com"
