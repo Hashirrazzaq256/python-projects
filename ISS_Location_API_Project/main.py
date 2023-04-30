@@ -9,6 +9,7 @@ MY_LONG = 74.358749
 My_EMAIL = "xapastron@gmail.com"
 MY_PASSWORD = "yudlqggkbjtyhcjo"
 
+
 def iss_location():
     response = requests.get("http://api.open-notify.org/iss-now.json")
     response.raise_for_status()
