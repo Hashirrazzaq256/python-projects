@@ -42,5 +42,4 @@ for exercise in data["exercises"]:
         }
     }
 sheet_response = requests.post(sheety_endpoint, json=workout,headers=header)
-
 print(sheet_response.text)
