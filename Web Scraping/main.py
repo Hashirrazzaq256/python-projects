@@ -5,6 +5,10 @@ response = requests.get("https://news.ycombinator.com/news")
 website_content = response.text
 soup = BeautifulSoup(website_content, "html.parser")
 print(soup.find(name="span", class_="titleline"))
+first_anchor = soup.find('a')
+first_anchor_text = first_anchor.text
+anchor_tags = soup.find_all('a')
+second_anchor_text = anchor_tags[1].text
 
 
 
