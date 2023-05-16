@@ -27,3 +27,8 @@ sp = spotipy.Spotify(
         cache_path="token.txt",
 ))
 user_id = sp.current_user()["id"]
+songs_urls = []
+year = date.split("-")[0]
+for song in song_names:
+      results =   sp.search(f"track:{song}, year:{year}", type ="track")
+      print(results)
