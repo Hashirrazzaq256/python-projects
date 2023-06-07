@@ -27,7 +27,7 @@ def play_game():
     return sum(cards)
     
   
- 
+#  running rhe game 
   while not game_over:
     user_result= calculate_score(user_cards)
     computer_result = calculate_score(computer_cards)
