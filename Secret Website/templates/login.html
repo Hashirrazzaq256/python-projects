@@ -8,11 +8,11 @@
         <div class="container">
 		<h1>Login</h1>
         <!-- This is where our form will go. -->
-			<form method="post" action="{{ url_for('logged') }}">
+			<form method="post" action="{{ url_for('login') }}">
 				{{ form.csrf_token }}
-				{{ form.email.label }} {{ form.email() }}
-				{{ form.password.label }} {{ form.password(size=30) }}
-				<input type="submit" value="Log In">
+				{{ form.email.label }}<br><br> {{ form.email() }}
+				{{ form.password.label }} <br><br>{{ form.password(size=30) }}
+				{{ form.submit }}
 			</form>
         </div>
 	</body>
