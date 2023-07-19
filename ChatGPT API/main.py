@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Define the endpoint and your API key
 endpoint = 'https://api.openai.com/v1/chat/completions'
-api_key = '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'
+api_key = 'YOUR_API_KEY'
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -43,4 +43,4 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
